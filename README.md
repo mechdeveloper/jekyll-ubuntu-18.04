@@ -7,8 +7,9 @@
 - [Resources](https://jekyllrb.com/resources/)
 - [Tutorials](https://jekyllrb.com/tutorials/home/)
 - [Showcase](https://jekyllrb.com/showcase/)
-- [DockerHub jekyll/jekyll](https://hub.docker.com/r/jekyll/jekyll)
-- [jekyll Docker Doc](https://github.com/envygeeks/jekyll-docker/blob/master/README.md)
+- [Configuration Options](https://jekyllrb.com/docs/configuration/options/)
+- [jekyll talk](https://talk.jekyllrb.com/)
+- [jekyll conf](https://jekyllrb.com/jekyllconf/)
 
 Build jekyll:ubuntu-18.04 development environment image
 
@@ -20,7 +21,12 @@ Run your jekyll:ubuntu-18.04 development environment image with volume mapping y
 
 ```docker
 docker run \
--p 4000:4000 -p 80:80 \
+-p 4000:4000 -p 35729:35729 \
 --volume="$PWD:/c/repo/jekyll/" \
 -it jekyll:ubuntu-18.04
 ```
+
+- navigate to the source code `cd /c/repo/jekyll/myblog/` inside container
+- run the command `bundle install`
+- serve the app `bundle exec jekyll serve --host 0.0.0.0 --detach`
+- to kil the process run `pkill -f jekyll`
