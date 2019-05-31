@@ -17,7 +17,7 @@ title: MechDeveloper's Blog
 email: business.tech.asb@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
  Digital technologies, Cloud, DevOps, CI/CD, TFS 2018, Windows Server 2016, Windows Containers, Modern Web Development, Kubernetes, Docker, Amazon Web Services.
-baseurl: "/blog" # the subpath of your site, e.g. /blog
+baseurl: "gh-blog" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: mechdeveloper1
 github_username:  mechdeveloper1
