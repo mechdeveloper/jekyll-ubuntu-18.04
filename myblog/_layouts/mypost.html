@@ -1,0 +1,19 @@
+---
+layout: "mywrapper"
+author: "Ashish Singh"
+---
+
+{% if page.title == "First blog" %}
+ <br> This is the First blog page
+
+{% elsif page.title == "Second Blog" %}
+<br> This is the Second blog page
+{% else %}
+<br> This is the other blog post
+{% endif %} 
+
+<h1>{{ page.title }}</h1>
+<h3>{{ layout.author }} {{ page.author }}</h3>
+<hr>
+
+{{ content }}

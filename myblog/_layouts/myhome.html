@@ -1,0 +1,32 @@
+{% for post in site.posts %}
+
+  <li><a href="{{ post.url }}">{{post.title}}</a></li>
+
+{% endfor %}
+
+{% for page in site.pages %}
+
+  <li><a href="{{ page.url }}">{{page.title}}</a></li>
+
+{% endfor %}
+
+{{site.data.datayml}} <br>
+
+{% for person in site.data.datayml %}
+  {{ person.name }}, {{person.occupation}} <br>
+{% endfor %}
+
+<hr>
+
+{% for file in site.static_files %}
+  {{ file.path }} <br>
+  {{ file.name }} <br>
+  {{ file.basename }} <br>
+  {{ file.extname }} <br>
+  {% if file.image %}
+    file.image is true
+    <img src="{{file.path}}" alt="{file.name}"> <br>
+  {% endif %}
+  <hr>
+{% endfor %}
+

@@ -16,8 +16,8 @@
 title: MechDeveloper's Blog
 email: business.tech.asb@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
- Digital technologies, DevOps, CI/CD Automation, Kubernetes, Docker, Amazon Web Services, Microsoft, Modern Web Development.
-baseurl: "" # the subpath of your site, e.g. /blog
+ Digital technologies, Cloud, DevOps, CI/CD, TFS 2018, Windows Server 2016, Windows Containers, Modern Web Development, Kubernetes, Docker, Amazon Web Services.
+baseurl: "/blog" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: mechdeveloper1
 github_username:  mechdeveloper1
@@ -28,6 +28,17 @@ theme: minima
 plugins:
   - jekyll-feed
 
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+        layout: "posts"
+        title: "My Default Title"
+  - scope:
+      path: "assets/img"
+    values:
+        image: true
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
