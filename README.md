@@ -1,10 +1,5 @@
 # [jekyll](https://jekyllrb.com/)
 
-## See this web site deployed here
-
-Link to git hub page:
-<https://mechdeveloper1.github.io/asb_blogs/>
-
 ## Important links
 
 - [Homepage](https://jekyllrb.com/)
